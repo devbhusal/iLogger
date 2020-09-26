@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="devbhusal.iloggerproject.settings"
+    android:weightSum="1">
+
+    <TextView android:text="To ensure proper funcioning of this project Wifi, GPS, B;uetooth and internet should be enabled" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:textColor="#282eff"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textIsSelectable="false"
+        android:textStyle="italic" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:id="@+id/gpscheckBox"
+        android:layout_weight="0.14"
+        android:enabled="true"
+        android:clickable="false" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet"
+        android:id="@+id/internetcheckBox"
+        android:layout_weight="0.14"
+        android:clickable="false" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:id="@+id/bluetoothcheckBox"
+        android:layout_weight="0.14"
+        android:clickable="false" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:id="@+id/wificheckBox"
+        android:layout_weight="0.14"
+        android:clickable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="One or more settings are not  enabled. Please enable it ad then hit next"
+        android:id="@+id/textView"
+        android:layout_weight="0.14"
+        android:textColor="#ff3c22"
+        android:visibility="invisible" />
+
+    <Button
+        android:background="@drawable/red_button"
+        style="@style/button_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.14"
+        android:onClick="checkandstart"
+        />
+
+
+
+</LinearLayout>

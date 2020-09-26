@@ -1,0 +1,131 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context="devbhusal.iloggerproject.showmap"
+    android:weightSum="1"
+    android:background="#fff9de"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="#fff9de">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/back"
+    android:weightSum="1">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="331dp"
+        android:layout_height="371dp"
+
+        android:id="@+id/map" tools:context=".showmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</LinearLayout>
+
+
+<!--
+
+    <ProgressBar
+        android:id="@+id/pbHeaderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </ProgressBar>
+    -->
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="About Current location"
+            android:id="@+id/textView22"
+            android:layout_gravity="start"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected Location:"
+            android:id="@+id/selectedlocation55"
+            android:layout_gravity="end"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <TextView
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:text="Not available"
+        android:id="@+id/textView2"
+        android:layout_gravity="start"
+         />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected location"
+        android:id="@+id/selectedlocation"
+        android:layout_gravity="end"
+         />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/genoa"
+            style="@style/genoa"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="View Selected Location"
+            android:id="@+id/button8"
+            android:onClick="showoldlocation"
+            />
+
+        <Button
+            android:background="@drawable/genoa"
+            style="@style/genoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Current    Location"
+            android:id="@+id/button4"
+            android:onClick="startnewlocation"
+             />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

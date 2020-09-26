@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="devbhusal.iloggerproject.viewoldmarker"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+
+            android:layout_width="200dp"
+
+            android:layout_height="fill_parent"
+
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Marker name"
+                android:id="@+id/markername"
+                android:textColor="#1b13ff"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="Place info"
+                android:id="@+id/test" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="Saved on:"
+                android:id="@+id/testt"
+                android:textColor="#9b10ff" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="-"
+                android:id="@+id/timed"
+                android:textColor="#1e11ff" />
+
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Show wifi"
+                android:id="@+id/button11"
+                android:onClick="showoldsavedwifi"
+                />
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Show bluetooth"
+                android:id="@+id/button12"
+                android:onClick="showoldsavedblue"
+                />
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Show taken Picture"
+                android:id="@+id/button13"
+                android:onClick="showoldpic"
+
+                />
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Play recorded audio"
+                android:id="@+id/button14"
+                android:onClick="listen"
+
+                />
+
+
+
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:id="@+id/button7"
+                android:onClick="exitonclick"
+                />
+            <Button
+                android:background="@drawable/genoa"
+                style="@style/genoa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:id="@+id/button8"
+                android:onClick="blueshare"
+                android:drawableLeft="@mipmap/blueicon"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mainbox"
+            android:layout_width="552dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"></FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+
